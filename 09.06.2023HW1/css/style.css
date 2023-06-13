@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.gross {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    margin: 50px auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.div1 p {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.div2 p {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.div3 p {
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.div4 p {
+    text-align: center;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.div6 p {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.div1 {
+    width: 481px;
+    height: 73px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.div2 {
+    width: 481px;
+    height: 73px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.div3 {
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.div4 {
+    width: 300px;
+    height: 120px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+/*.div5 {
+    display: flex;
+     justify-content: flex-end;
+}
+
+.div5 {
+    width: 100px;
+    height: 240px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}*/
+
+.div6 {
+    width: 481px;
+    height: 73px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
