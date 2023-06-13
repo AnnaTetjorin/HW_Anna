@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+}
+
+div h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+div form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+ }
+
+div {
+    width: 500px;
+    height: 500px;
+    border: 10px solid wheat;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+input {
+    padding: 10px;
+}
+
+.registration {
+    background-color: bisque;
+    border: 5px solid bisque;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    margin: 10px;
+ }
+
+button {
+     margin: 10px;
+}
+
+p {
+       font-size: 12px;
+       color: gray;
+}
+
+#Passwort:focus
+#E-mail_Adresse:focus {
+    outline: none;
+    box-shadow: 4px 5px 5px 2px peru;
+}
+
+#Passwort
+#E-mail_Adresse {
+    transition: box-shadow 2s;
+}
