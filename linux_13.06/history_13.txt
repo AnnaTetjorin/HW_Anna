@@ -1,0 +1,48 @@
+   0 pwd
+   1 mkdir -p /home/animals
+   2 mkdir -p /home/animals/dogs
+   3 mkdir -p /home/animals/cats
+   4 mkdir -p /home/animals/fish
+   5 touch /home/animals/dogs/pluto
+   6 touch /home/animals/cats/garfield
+   7 touch /home/animals/fish/nemo
+   8 tree /home
+   9 ls
+  10 cd /home
+  11 ls
+  12 cd ..
+  13 mkdir -p /home/tmp
+  14 touch /home/tmp/adam
+  15 mkdir -p /home/humans
+  16 cp /home/tmp/adam /home/humans
+  17 tree /home
+  18 touch /home/tmp/evA
+  19 mkdir -p /home/opt/eve
+  20 mv /home/tmp/evA /home/opt/eve
+  21 ls
+  22 tree /home
+  23 mv /home/tmp/evA /opt/eve
+  24 tree /home
+  25 rm /home/opt/eve/evA
+  26 tree /home
+  27 rm /home/opt/eve
+  28 rm -r /home/opt/eve
+  29 tree /home
+  30 rm -r /home/opt
+  31 tree /home
+  32 touch /home/tmp/evA
+  33 tree /home
+  34 mv /home/tmp/evA /opt/eve
+  35 tree /home
+  36 tree
+  37 rm -r /opt/eve
+  38 rm -r /opt
+  39 mkdir -p /home/opt/eve
+  40 mv /home/tmp/evA /home/opt/eve
+  41 tree /home
+  42 mv /home/opt/eve /home/humans
+  43 tree /home
+  44 ls
+  45 ls /home
+  46 ls /home/humans
+  47 history > history_13.txt
