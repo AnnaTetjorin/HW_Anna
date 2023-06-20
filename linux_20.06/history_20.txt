@@ -1,0 +1,113 @@
+   0 pwd
+   1 mkdir -p /home/animals
+   2 mkdir -p /home/animals/dogs
+   3 mkdir -p /home/animals/cats
+   4 mkdir -p /home/animals/fish
+   5 touch /home/animals/dogs/pluto
+   6 touch /home/animals/cats/garfield
+   7 touch /home/animals/fish/nemo
+   8 tree /home
+   9 ls
+  10 cd /home
+  11 ls
+  12 cd ..
+  13 mkdir -p /home/tmp
+  14 touch /home/tmp/adam
+  15 mkdir -p /home/humans
+  16 cp /home/tmp/adam /home/humans
+  17 tree /home
+  18 touch /home/tmp/evA
+  19 mkdir -p /home/opt/eve
+  20 mv /home/tmp/evA /home/opt/eve
+  21 ls
+  22 tree /home
+  23 mv /home/tmp/evA /opt/eve
+  24 tree /home
+  25 rm /home/opt/eve/evA
+  26 tree /home
+  27 rm /home/opt/eve
+  28 rm -r /home/opt/eve
+  29 tree /home
+  30 rm -r /home/opt
+  31 tree /home
+  32 touch /home/tmp/evA
+  33 tree /home
+  34 mv /home/tmp/evA /opt/eve
+  35 tree /home
+  36 tree
+  37 rm -r /opt/eve
+  38 rm -r /opt
+  39 mkdir -p /home/opt/eve
+  40 mv /home/tmp/evA /home/opt/eve
+  41 tree /home
+  42 mv /home/opt/eve /home/humans
+  43 tree /home
+  44 ls
+  45 ls /home
+  46 ls /home/humans
+  47 history > history_13.txt
+  48 ls -l
+  49 export_file history_13.txt
+  50 clear
+  51 ls
+  52 echo
+  53 echo hello
+  54 jgxjydsyjgkbl
+  55 echo "hello"
+  56 date
+  57 date +'%D'
+  58 date +'%T'
+  59 date +'%H'
+  60 clear
+  61 date
+  62 ls
+  63 date > date.txy
+  64 date > date.txt
+  65 ls
+  66 ls -l
+  67 df
+  68 df -h
+  69 cat bench.py
+  70 ls -l
+  71 clear
+  72 df -h
+  73 cat date.txt
+  74 >> hello.c
+  75 ls -l
+  76 clear
+  77 cat etc/group
+  78 clear
+  79 df -h | wc
+  80 df -h | wc -m
+  81 df -h | wc -m >> date.txt
+  82 df -h
+  83 df -h | grep root
+  84 df -h | grep /
+  85 cat etc/group | grep user
+  86 cat etc/group | grep user2
+  87 clear
+  88 pwd
+  89 mkdir -p /home/user/start
+  90 touch /home/user/start/1.txt
+  91 tree /home
+  92 ls -l
+  93 echo "Start"
+  94 echo "Start" > 1.txt
+  95 cat 1.txt
+  96 date
+  97 date >> 1.txt
+  98 cat 1.txt
+  99 mkdir -p /opt/task
+ 100 touch /opt/task/start.txt
+ 101 tree /opt
+ 102 cat 1.txt > start.txt
+ 103 cat start.txt
+ 104 ls -la/
+ 105 df -h
+ 106 ls -la / 
+ 107 ls -la / | tail -4
+ 108 ls -la / | tail -4 >> start.txt
+ 109 cat start.txt
+ 110 history > history 20.txt
+ 111 ls -l
+ 112 history > history_20.txt
