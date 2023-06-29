@@ -1,0 +1,24 @@
+   0 pwd
+   1 cat /proc/cpuinfo
+   2 /proc/cpuinfo | grep vendor
+   3 cat /proc/cpuinfo | grep vendor
+   4 vi /proc/cpuinfo 
+   5 clear
+   6 pwd
+   7 date
+   8 date > date.txt
+   9 cat date.txt
+  10 df -h /
+  11 df -h / >> date.txt
+  12 cat date.txt
+  13 history
+  14 history | tail -5
+  15 history | tail -5 >> date.txt
+  16 cat date.txt
+  17 cat /proc/cpuinfo
+  18 cat /proc/cpuinfo | grep vendor
+  19 cat /proc/cpuinfo | grep vendor >> date.txt
+  20 cat date.txt
+  21 vi /root/date.txt
+  22 cat date.txt
+  23 history > history_27.txt
