@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.users_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.users_container div {
+    border: 5px double gold;
+    margin: 30px;
+    padding: 7px;
+    background-color: aquamarine;
+}
