@@ -1,0 +1,12 @@
+   0 pwd
+   1 vi /tmp/file.txt
+   2 df -h | head -3
+   3 df -h | head -3 >> file.txt
+   4 cat file.txt
+   5 chmod g+ w file.txt
+   6 chmod g+w file.txt
+   7 chmod u-r file.txt
+   8 ls -l
+   9 chmod o+x file.txt
+  10 ls -l
+  11 history > history_04.txt
