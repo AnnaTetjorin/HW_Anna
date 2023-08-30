@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .one {
+      list-style: none;
+      color: black;
+      }
+  
+     
+  h1 {
+       color: #202020;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  } 
+
+  button {
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: blueviolet;
+font-family: Ubuntu;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 2px;
+}
+
+    
+.one li {
+    margin-bottom: 15px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-container .one {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 1000px;
+    
+}
+
+.name {
+  margin-top: 60px;
+  color: #b33636;
+  text-align: left;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo-footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+}
