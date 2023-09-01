@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#navbar .links {
+    display: flex;
+    gap: 31px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+button {
+    color: #FFF;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    border: 1px solid white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    margin-top: 95px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.second {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+p {
+    color: white;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.onemore {
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    margin-top: 85px;
+    color: #FFF;
+    background-color: transparent;
+    width: 178px;
+    height: 65px;
+    border: 1px solid #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.buttons .try {
+    margin-right: 35px;
+    background-color: #4452FE;
+}
+
+.boards {
+    margin-top: 35px;
+    width: 1300px;
+    height: 840px;
+}
+
+#two {
+    margin-top: 100px;
+}
+
+.features {
+    margin-top: 35px;
+
+}
+
+.features h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 180px;
+    font-size: 52px;
+}
+
+.features p {
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+
+.features .free {
+    margin-top: 5px;
+}
+
+.diagnostic {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagnostic .rows {
+    padding: 20px;
+    gap: 25px;
+}
+
+.rows h5 {
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.rows .par {
+    margin-top: 3px;
+    text-align: left;
+}
+
+.rows .three {
+    margin-top: 75px;
+}
+
+.rows .three .icons {
+    display: flex;
+}
+
+#four {
+    margin-top: 250px;
+}
+
+.contents {
+    margin-top: 35px;
+
+}
+
+.contents h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 180px;
+    font-size: 52px;
+}
+
+
+.contents p {
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+
+.contents .free {
+    margin-top: 5px;
+}
+
+#four .cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#six {
+    margin-top: 250px;
+    
+}
+
+.gallery {
+    margin-top: 35px;
+
+}
+
+.gallery h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 180px;
+    font-size: 52px;
+}
+
+
+.gallery p {
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+
+.gallery .free {
+    margin-top: 5px;
+}
+
+#six .gallery-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#six .gallery-images-two {
+    margin-top: 40px;
+    margin-bottom: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#six .see {
+    color: #FFF;
+    background-color: transparent;
+    width: 145px;
+    height: 50px;
+    border: 1px solid #FFF;
+    font-weight: 700;
+    cursor: pointer; 
+    margin-left: 600px;
+}
+
+#seven {
+    margin-top: 250px;
+    
+}
+
+.partners {
+    margin-top: 35px;
+
+}
+
+.partners h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 180px;
+    font-size: 52px;
+}
+
+
+.partners p {
+    margin-top: 27px;
+    color: #FFFFFF;
+}
+
+.partners .free {
+    margin-top: 5px;
+}
+
+#seven .mini-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#seven .all {
+    color: #FFF;
+    background-color: transparent;
+    width: 145px;
+    height: 50px;
+    border: 1px solid #FFF;
+    font-weight: 700;
+    cursor: pointer; 
+    margin-left: 600px;
+}
+
+#eight {
+    margin-top: 250px;
+    
+}
+
+#eight h2 {
+    margin-top: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 100px;
+    font-size: 52px;
+}
+
+#eight .black_cards_one {
+    margin-top: 50px;
+    gap: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eight .black_cards_two {
+    margin-top: 20px;
+    gap: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nine .grey {
+    margin-top: 300px;
+    margin-left: 80px;
+    width: 1200px;
+    height: 400px;
+    background-color: #343434;
+    display: flex;
+    gap: 40px;
+
+    
+}
+
+#nine .first_grey h3 {
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+    font-weight: 180px;
+    font-size: 52px;
+}
+
+#nine .first_grey .more {
+    margin-top: 2px;
+}
+
+#nine .grey_button {
+    color: #FFF;
+    background-color: transparent;
+    width: 200px;
+    height: 45px;
+    border: 1px solid #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #4452FE;
+    margin-left: 70px;
+}
+
+footer {
+    margin-top: 280px;
+    margin-bottom: 100px;
+}
+
+.footer_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .columns .column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+footer .columns {
+    display: flex;
+    
+}
+
+footer .columns .column h6 {
+     color: #FFFFFF;
+     font-size: 20px;
+     margin-left: 80px;
+     margin-bottom: 50px;
+}
+
+footer .columns .column a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.footer_icons {
+    margin-left: 200px;
+}
+
+footer .footer_icons .footer_icons_one {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+footer .footer_icons .footer_icons_two {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer_icons .footer_icons_one p {
+    color: #FFFFFF;
+}
+
+.footer_icons .footer_icons_one img {
+    margin-right: 20px;
+}
+
+.footer_icons .footer_icons_two img {
+    margin-right: 20px;
+}
+
+.footer_icons .footer_icons_three img {
+    margin-right: 30px;
+}
+
+.footer_icons .footer_icons_two p {
+    color: #FFFFFF;
+}
