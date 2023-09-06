@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .one {
+      list-style: none;
+      color: black;
+      }
+  
+     
+  h1 {
+       color: #202020;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  } 
+
+  button {
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: blueviolet;
+font-family: Ubuntu;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 2px;
+}
+
+    
+.one li {
+    margin-bottom: 15px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-container .one {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+
+#content {
+    margin-top: 100px;;
+}
+
+#content h2 {
+    color: #202020;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#content .paragraph {
+    width: 740px;
+    height: 190px;
+    border: none;
+    margin-left: 185px;
+    margin-top: 35px;
+}
+
+#content .paragraph p {
+    color: #4F4F4F;
+    font-family: Ubuntu; 
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#content .contact {
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #5528ff;
+    color: #FFF;
+    margin-left: 185px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+
+#our_services .cards_first {
+    position: relative;
+    height: 250px;
+    width: 1200px;
+    margin: 40px;
+    border-top-color: rgb(196, 197, 197);
+    border-top: 3px solid rgb(197, 197, 197); 
+}
+
+#our_services .cards_first::before{
+    top: -12px;
+    left: 150px;
+    position: absolute;
+    content: 'OUR SERVICES';
+    background: #FFFFFF;
+    color: rgb(197, 196, 196);
+    padding: 0 10px 0 10px;
+}
+
+#our_services .cards_first h5{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#our_services .cards_second h5{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#our_services .cards_first .cardOne, .cardTwo {
+    margin-top: 100px;
+    width: 450px;
+    height: 100px;
+}
+
+#our_services .cards_second .cardThree, .cardFour {
+    margin-top: 10px;
+    width: 450px;
+    height: 100px;
+}
+
+#our_services .cards_first .cardOne .imgUndH{
+    display: flex;
+    gap: 50px;
+}
+
+#our_services .cards_first .cardTwo .imgUndH{
+    display: flex;
+    gap: 50px;
+}
+
+#our_services .cards_second .cardThree .imgUndH{
+    display: flex;
+    gap: 50px;
+}
+
+#our_services .cards_second .cardFour .imgUndH{
+    display: flex;
+    gap: 50px;
+}
+
+#our_services .cards_first {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+#our_services .cards_second {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    
+}
+
+#our_clients .firstline_clients {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top-color: rgb(196, 197, 197);
+    border-top: 3px solid rgb(197, 197, 197); 
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+#our_clients .firstline_clients::before{
+    top: -12px;
+    left: 150px;
+    position: absolute;
+    content: 'OUR CLIENTS';
+    background: #FFFFFF;
+    color: rgb(197, 196, 196);
+    padding: 0 10px 0 10px;
+    
+}
+
+#our_clients .firstline_clients img{
+    margin-top: 100px;
+}
+
+#our_clients .secondline_clients{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    margin: 60px;
+}
+
+#our_clients .thirdline_clients{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 90px;
+}
+
+#our_team .person_firstline {
+    position: relative;
+    height: 200px;
+    width: 1200px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top-color: rgb(196, 197, 197);
+    border-top: 3px solid rgb(197, 197, 197); 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#our_team .person_secondline{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#our_team .person_thirdline{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#our_team .person_firstline::before{
+    top: -12px;
+    left: 150px;
+    position: absolute;
+    content: 'OUR TEAM';
+    background: #FFFFFF;
+    color: rgb(197, 196, 196);
+    padding: 0 10px 0 10px;
+}
+
+#our_team .person_firstline h5{
+    color: #202020;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#our_team .person_secondline h5{
+    color: #202020;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#our_team .person_thirdline h5{
+    color: #202020;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#our_team .person_firstline .personOne, .personTwo, .personThree {
+    margin-top: 100px;
+    width: 300px;
+    height: 90px;
+}
+
+#our_team .person_secondline .personFour, .personFive, .personSix {
+    margin-top: 60px;
+    width: 300px;
+    height: 90px;
+}
+
+#our_team .person_thirdline .personSeven, .personEight, .personNine {
+    margin-top: 70px;
+    width: 300px;
+    height: 90px;
+}
+
+#our_team .person_firstline .personOne .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_firstline .personTwo .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_firstline .personThree .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_secondline .personFour .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_secondline .personFive .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_secondline .personSix .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_thirdline .personSeven .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_thirdline .personEight .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_thirdline .personNine .fotoName{
+    display: flex;
+    gap: 30px;
+}
+
+#our_team .person_firstline .personOne .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_firstline .personTwo .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_firstline .personThree .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_secondline .personFour .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_secondline .personFive .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_secondline .personSix .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_thirdline .personSeven .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_thirdline .personEight .fotoName img{
+    border-radius: 50px;
+}
+
+#our_team .person_thirdline .personNine .fotoName img{
+    border-radius: 50px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 650px;
+    
+}
+
+footer {
+    margin-top: 90px;
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo-footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+}
