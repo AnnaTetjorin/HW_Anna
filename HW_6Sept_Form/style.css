@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body .bigForm {
+    width: 100%;
+    height: 600px;
+    background-color: #A7D7C5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bigForm .oben {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.bigForm .unten {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.bigForm form {
+    width: 450px;
+    height: 450px;
+    background-color: #F6FBF9;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigForm form h1 {
+    color: #212B27;
+    text-align: center;
+    font-family: Karla;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.bigForm form p {
+    color: #32403B;
+    text-align: center;
+    font-family: Karla;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.bigForm form input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px; 
+    margin-top: 20px;
+    padding: 20px;
+    width: 310px;
+    border-radius: 15px;
+    border: 1.534px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Karla;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bigForm form .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px; 
+    margin-top: 30px;
+    padding: 15px;
+    width: 240px;
+    border-radius: 17px;
+    border: 1.534px solid rgba(0, 0, 0, 0.10);
+    background: #84C7AE;
+    color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bigForm .mitLink {
+    color: #32403B;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: Karla;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.bigForm .mitLink p {
+    color: #32403B;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-family: Karla;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 3px;
+    margin-left: 110px;
+}
