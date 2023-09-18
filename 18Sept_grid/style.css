@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 70px);
+      grid-template-rows: repeat(5, 70px);
+      gap: 30px 30px;
+      justify-content: center;
+      
+  }
+
+  .grid-item {
+    padding: 40px;
+    background: rgb(172, 239, 239);
+  }
+
+  .number1 {
+    background-color: rgb(149, 197, 38);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .number2 {
+    background-color: rgb(179, 90, 179);
+    grid-column: 4/5;
+  }
+
+  .number4 {
+    background-color: rgb(41, 5, 5);
+    grid-column: -3/-1;
+      }
+
+   .number11 {
+    background-color: rgb(112, 112, 192);
+    grid-column: -5/-1;
+   }   

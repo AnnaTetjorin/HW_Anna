@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .grid-container {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+      justify-content: center;
+      
+  }
+
+  .grid-items {
+    padding: 10px;
+
+  }
+
+  .number1 {
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+  }
+
+  .number2 {
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+
+  .number3 {
+    background-color: antiquewhite;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .number4 {
+    background-color: blueviolet;
+    grid-column: 1/2;
+
+  }
+
+  .number5 {
+    background-color: pink;
+    grid-column: 2/5;
+  }
+
+  .number6 {
+    background-color: brown;
+    grid-column: 5/6;
+  }
