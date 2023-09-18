@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#theFirst {
+    background: url('./background.svg');
+    width: 100%;
+    min-height: 100vh;
+    padding: 250px;
+    position: relative;
+}
+
+#theFirst h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+#theFirst p {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#theFirst .white-flex {
+    width: 900px;
+    height: 35%;
+    padding: 30px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+#theFirst .white-flex .flexP span {
+    color: #F7654A;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+     
+}
+
+
+#theFirst .white-flex .flexP .firstP {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#theFirst .white-flex .flexP .secondP {
+    color: #999;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
