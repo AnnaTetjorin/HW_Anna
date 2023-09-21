@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#theFirst {
+    background: url('./background.svg');
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+}
+
+#theFirst h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+#theFirst p {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#theFirst .white-flex {
+    width: 900px;
+    height: 35%;
+    padding: 30px;
+    background-color: #FFF;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+#theFirst .white-flex .flexP span {
+    color: #F7654A;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+     
+}
+
+
+#theFirst .white-flex .flexP .firstP {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#theFirst .white-flex .flexP .secondP {
+    color: #999;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#projects{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-top: 50px;
+      
+}
+
+#projects .project123{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+
+#projects>h1{
+    color: #404149;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#projects .project123>div{
+    max-width: 350px;
+    margin-bottom: 200px;    
+}
+
+#projects .project123>div img{
+    margin-bottom: 45px;
+}
+
+#projects .project123>div hr{
+    width: 60px;
+    height: 7px;
+    background: #F7654A;
+    border: none;
+    margin-bottom: 15px;
+}
+
+#projects .project123>div h3{
+    color: #404149;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#projects .project123>div p{
+    color: #999;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#orange{
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: #F7654A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#orange .orangeProject>h1{
+    color:#FFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Oswald;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#orange .orangeProject>h3{
+    color:#FFF;
+    margin-bottom: 30px;
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+button{
+    width: 170px;
+    height: 50px;
+    color: #000;
+    background: #FFF;
+    font-family: Oswald;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+}
+
+#building{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    
+}
+
+#building .buildingOne>h1{
+    text-align: center;
+    margin-bottom: 66px;
+    color: #000;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#building .buildingTwo>h1{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 66px;
+    color: #000;
+    font-family: Oswald;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#building .buildingOne .buildingBild>div{
+    width: 350px;
+    height: 250px;
+    background-color: #F7F7F7;
+    align-items: center;
+    padding: 20px;
+}
+
+#building .buildingOne .buildingBild{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 350px);
+}
+
+#building .buildingOne .buildingBild>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+#building .buildingTwo .buildingBild>div{
+    width: 350px;
+    height: 250px;
+    background-color: #F7F7F7;
+    align-items: center;
+    padding: 20px;
+}
+
+#building .buildingTwo .buildingBild{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 350px);
+}
+
+#building .buildingTwo .buildingBild>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1201px) {
+    #theFirst h1, 
+    #projects>h1 {
+    font-size: 64px;
+}}
+
+@media only screen and (min-width: 1201px) {
+    #building .buildingOne .buildingBild>div,
+    #building .buildingTwo .buildingBild>div{
+        padding: 0 20%;  
+    }}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+        #theFirst h1, 
+        #projects>h1 {
+        font-size: 52px;
+        }}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    #building .buildingOne .buildingBild>div,
+    #building .buildingTwo .buildingBild>div{
+        padding: 0 10%;  
+    }}
+
+@media only screen and (min-width: 480px) and (max-width: 787px) {
+        #theFirst h1, 
+        #projects>h1 {
+        font-size: 40px;
+        }}
+
+@media only screen and (min-width: 480px) and (max-width: 787px) {
+    #building .buildingOne .buildingBild>div,
+    #building .buildingTwo .buildingBild>div,
+    #theFirst, #projects, #building{
+        padding: 0 5%;  
+    }}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+        #theFirst h1, 
+        #projects>h1 {
+        font-size: 28px;
+        }}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #building .buildingOne .buildingBild>div,
+    #building .buildingTwo .buildingBild>div,
+    #theFirst, #projects, #building{
+        padding: 0 2%;  
+    }}
