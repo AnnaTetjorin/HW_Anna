@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body{
+    --background: #FBFAFA;
+    --text-color: #000000;
+}
+
+body.darkMode{
+    --background: rgb(151, 151, 151);
+    --text-color: #FBFAFA;
+}*/
+
+#main{
+    display: flex;
+}
+
+.bear{
+    width: 50%;
+    height: 100vh;
+}
+
+.form-holder{
+    padding: 100px 135px;
+    background: #FBFAFA;
+}
+
+/*.modal_darkMode .form-holder{
+    background: #151718;
+}*/
+
+.form-holder .form-container{
+    width: 450px;
+    height: 800px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(215, 215, 215, 0.25);
+    padding: 40px;
+    position: relative;
+}
+
+.form-holder .form-container #theme_button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(2, 17, 17);
+    border-radius: 50%;
+    padding: 8px 6px;
+    text-align: center;
+    color: aqua;
+    position: absolute;
+}
+
+.form-holder .form-container #theme_button:first-child{
+    top: -20px;
+    right: -20px;
+}
+
+.form-holder .darkMode {
+     background: #2D2F30;
+     color: #B0B0B0;
+}
+
+.modal_darkMode .form-holder .form-container .labels-inputs input{
+     background: #414344;
+     border: none;
+     color:rgb(1, 7, 7);
+}
+
+.lightMode .form-holder .form-container .labels-inputs input{
+    background: #f7f8f8;
+    border: none;
+    color:rgb(245, 247, 247);
+}
+
+.form-holder .form-container .form-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.form-holder .form-container .form-head > a{
+    color: #000000;
+}
+
+.form-holder .form-container > h1{
+    color: #414344;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+   
+}
+
+.form-holder .form-container > p{
+    color: #676767;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.form-container .labels-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-container .labels-inputs > input{
+    width: 350px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #E3E1E1;
+}
+
+
+.form-holder .form-container .grey-line{
+    width: 350px;
+    height: 2px;
+    justify-content: center;
+    background: #EFEFEF
+}
+
+.form-container .labels-inputs > label{
+    color: #414344;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-holder .checkIt{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
+.form-holder .form-container > button{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    background: #0A55C6;
+    padding: 18px;
+    border: none;
+    color: #FFF;
+    align-items: end;
+}
