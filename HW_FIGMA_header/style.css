@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./bodyPic.svg);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    background-color: #FCFCFC;
+}
+
+.header-logo{
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.header-logo .i-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.header-logo .p-logo{
+    color: #2D2F30;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.darkMode .header-logo .p-logo{
+    color: blanchedalmond;
+}
+
+.darkMode{
+    background: #2D2F30;
+    color: #FCFCFC;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #2D2F30;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.darkMode nav a{
+    color: #FCFCFC;
+}
+
+.nav-mode{
+    width: 1px;
+    height: 1px;
+    border-radius: 42%;
+    border: none;
+    margin-bottom: 55px;
+    margin-right: 60px;
+    opacity: 0.7;
+}
+
+.darkMode nav > img{
+    background-color: #FCFCFC;
+}
+
+section{
+    display: flex;
+}
+
+.divText{
+    width: 50%;
+    padding: 175px 70px;
+}
+
+.divText > h1{
+    max-width: 420px;
+    color:#FCFCFC;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.divText > p{
+    max-width: 350px;
+    height: 40px;
+    color: #FCFCFC;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#rosa{
+    width: 190px;
+    height: 66px;
+    border-radius: 4px;
+    background: #D31671;
+    color: #FCFCFC;
+    border: none;
+    margin-top: 40px;
+}
+
+#white{
+    width: 140px;
+    height: 60px;
+    border-radius: 4px;
+    border: 2px solid #FCFCFC;
+    color: #FCFCFC; 
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.form-container{
+    width: 450px;
+    height: 590px;
+    border-radius: 10px;
+    background:#FCFCFC;
+    box-shadow: 0px 4px 4px 0px rgba(215, 215, 215, 0.25);
+    padding: 40px;
+    margin: 70px 90px;
+}
+
+.form-container .form-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.form-container .form-head a{
+    color:#2D2F30;
+}
+
+.form-container > h1{
+    color:#2D2F30;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form-container > p{
+    color:#2D2F30;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.form-container .grey-line{
+    width: 350px;
+    height: 2px;
+    margin-top: 18px;
+    justify-content: center;
+    background:#dbdedf;
+}
+
+.form-container .labels-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.form-container .labels-inputs > input{
+    width: 350px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #E3E1E1;
+}
+
+.form-container .labels-inputs > input::placeholder{
+    color: #c3c6c7;
+}
+
+.form-container .labels-inputs > label{
+    color: #414344;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-container .checkIt{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.form-container .checkIt label{
+    color: #acaeaf;
+}
+
+.form-container .checkIt span{
+    color: #0A55C6;
+    margin-left: 70px;
+}
+
+.form-container > #submitForm{
+    width: 350px;
+    height: 60px;
+    border-radius: 4px;
+    background: #0A55C6;
+    padding: 18px;
+    border: none;
+    color:#E3E1E1;
+    align-items: end;
+    margin-top: 30px;
+}
+
