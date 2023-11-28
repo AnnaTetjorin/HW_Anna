@@ -1,0 +1,56 @@
+$main-bg-color: #50806B;
+$secondary-bg-color: #E8EDDE;
+$third-color: #FFF;
+$fouth-color: #000;
+$main-font: Poppins;
+$secondary-font: Open Sans;
+
+@mixin greenButton {
+            border-radius: 8px;
+            border: none;
+            color: $third-color;
+            background: $main-bg-color;
+            text-align: center;
+            font-family: $secondary-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+
+@mixin greenSpan {
+                color: $main-bg-color;
+                font-family: $main-font;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+}
+
+@mixin blackH1 {
+            color: $fouth-color;
+            font-family: $main-font;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+}
+
+@mixin showP {
+            color: $fouth-color;
+            text-align: right;
+            font-family: $main-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21.7px; 
+            text-transform: uppercase;
+}
+
+@mixin blackLine {
+    width: 99%;
+    height: 1px;
+    background-color: $fouth-color;
+    margin: 30px 0;
+}

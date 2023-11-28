@@ -1,0 +1,169 @@
+@use 'variables';
+@use 'global';
+
+header {
+    .headerOne {
+        height: 45px;
+        background: variables.$main-bg-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+        p {
+            color: variables.$third-color;
+            font-family: variables.$secondary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.5px;
+        }
+        span {
+            color: variables.$third-color;
+            font-family: variables.$secondary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.5px;
+        }
+    }
+    .headerTwo {
+        height: 60px;
+        display: flex;
+        background: variables.$third-color;
+        justify-content: space-around;
+        align-items: center;
+        span {
+            color: variables.$main-bg-color;
+            font-family: variables.$main-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+        p {
+            color: variables.$fouth-color;
+            font-family: variables.$main-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+        nav {          
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 80px;
+                li {
+                    color: variables.$fouth-color;
+                    font-family: variables.$secondary-font;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.6px;
+                }
+                a {
+                    text-decoration: none;
+                    color: variables.$fouth-color
+                }
+            }
+        }
+        .searchAndKorb {
+            display: flex;
+            gap: 10px;
+            input {
+                border: none;
+                width: 63px;
+            }
+            input::placeholder {
+                color: #979797;
+                font-family: variables.$secondary-font;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.6px;
+            }
+            .searchImg {
+                width: 22px;
+                height: 22px;
+                margin: auto;
+            }
+            .line {
+                width: 2px;
+                height: 37px;
+                background: #979797;
+                margin: auto 20px;
+            }
+            .korb {
+                width: 18px;
+                height: 20px;
+                margin: auto;
+            }
+            .three {
+                color: variables.$fouth-color;
+                font-family: variables.$secondary-font;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.6px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        width: 100%;
+        overflow-x:hidden;
+    }
+    header .headerOne, .headerTwo {
+        width: 100%;
+    }
+    header .headerOne p {
+        flex-direction: row;
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 20%;
+    }
+    header .headerOne span {
+        display: none;
+    }
+    header .headerTwo span {
+        display: none;
+      }
+    header .headerTwo p {
+        display: none;
+      }
+      header .headerTwo nav {
+        justify-content: center;
+        align-items: center;
+      }
+    header .headerTwo nav ul {
+        gap: 30px;
+      }
+    header .headerTwo nav ul li, a {
+        font-size: 18px;
+      }
+    header .headerTwo .searchAndKorb {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    header .headerTwo nav ul li, a {
+        font-size: 10px;
+       }
+    header .headerOne p {
+        font-size: 10px;
+    }
+}

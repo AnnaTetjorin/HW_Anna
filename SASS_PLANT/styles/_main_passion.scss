@@ -1,0 +1,140 @@
+@use 'variables';
+@use 'global';
+
+.passion { 
+    width: 100%;
+    height: 700px;
+    section {
+    background: variables.$secondary-bg-color;
+    
+    .imgs-container {
+       
+        display: flex;
+        justify-content: flex-end;
+       // background-image: url('../media/bigImg.svg');
+          
+        .bigImg {
+            height: 700px;
+            background-image: url('../media/bigImg.svg');
+            
+           object-fit: cover;
+           object-position: right;
+            position: relative;
+        }
+    }
+    .divMiddle {
+        max-width: 590px;
+        position: absolute;
+        top: 105px;
+        left: 30%;
+        height: 700px;
+        background: rgba(80, 128, 107, 0.20);
+        backdrop-filter: blur(20px);
+        justify-content: center;
+        align-items: center;
+        padding: 140px 40px;
+        z-index: 1;
+        h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: variables.$fouth-color;
+            text-align: center;
+            font-family: variables.$main-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 80px; 
+            letter-spacing: 2.4px;
+        }
+        p {
+            color: #000;
+            text-align: center;
+            font-family: variables.$main-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 60px auto;
+        }
+        button {
+            display: flex;
+            padding: 24px 56px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 20px;
+            background: variables.$third-color;
+            border: none;
+            margin: auto;
+            color: #000;
+            text-align: center;
+            font-family: variables.$secondary-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px; 
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+        }
+    }
+    
+}
+}
+.greenLine {
+    height: 45px;
+    background: variables.$main-bg-color;
+    z-index: 5;
+}
+
+@media screen and (max-width: 960px) {
+    .passion {
+        width: 100%;
+        overflow-x:hidden;
+    }
+    .passion section .divMiddle {
+        padding: 90px 30px;
+        right: 30%;
+    }
+    .passion section .divMiddle h1 {
+        font-size: 30px;
+    }
+    .passion section .divMiddle button{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .passion section .divMiddle p {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .passion {
+        width: 100%;
+        overflow-x:hidden;
+    }
+    .passion section .imgs-container {
+        width: 100%;
+    }
+     .passion section .divMiddle {
+     //   width: 100%;
+     //   padding: 140px 0px;
+        
+        right: 10%;
+        left: 10%;
+     }
+    .passion section .divMiddle h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .passion section .divMiddle p {
+        font-size: 15px;
+        margin: 20px auto;
+    }
+    .passion section .divMiddle button {
+        margin-top: 80px;
+        font-size: 15px;
+    }
+}

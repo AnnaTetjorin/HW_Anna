@@ -1,0 +1,236 @@
+@use 'variables2';
+@use 'global2';
+
+header {
+    .headerOne {
+        height: 45px;
+        background: variables2.$main-bg-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       // text-align: center;
+        p {
+            color: variables2.$third-color;
+            font-family: variables2.$secondary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.5px;
+        }
+        .usd {
+            display: flex;
+            gap: 40px;
+        span {
+            color: variables2.$third-color;
+            font-family: variables2.$secondary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.5px;
+        }
+    }
+    }
+    .headerTwo {
+        height: 60px;
+        display: flex;
+        background: variables2.$third-color;
+        justify-content: space-around;
+        align-items: center;
+        span {
+            color: variables2.$main-bg-color;
+            font-family: variables2.$main-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+        p {
+            color: variables2.$fouth-color;
+            font-family: variables2.$main-font;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+        nav {          
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 80px;
+                li {
+                    color: variables2.$fouth-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: -0.6px;
+                }
+            }
+        }
+        .searchAndKorb {
+            display: flex;
+            gap: 10px;
+            input {
+                border: none;
+                width: 63px;
+            }
+            input::placeholder {
+                color: #979797;
+                font-family: variables2.$secondary-font;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.6px;
+            }
+            .searchImg {
+                width: 22px;
+                height: 22px;
+                margin: auto;
+            }
+            .line {
+                width: 2px;
+                height: 37px;
+                background: #979797;
+                margin: auto 20px;
+            }
+            .korb {
+                width: 18px;
+                height: 20px;
+                margin: auto;
+            }
+            .three {
+                color: variables2.$fouth-color;
+                font-family: variables2.$secondary-font;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.6px;
+                margin: auto;
+            }
+        }
+    }
+    .shop {
+        //width: 100%;
+        height: 184px;
+        background: variables2.$secondary-bg-color;
+        padding: 48px 100px;
+        display: flex;
+        align-items: center;
+        h1 {
+            color: variables2.$fouth-color;
+            font-family: variables2.$main-font;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 80px; 
+            letter-spacing: 1.6px;
+        }
+        .smallBlackLine {
+            width: 2px;
+            height: 48px;
+            background: variables2.$fouth-color;
+            margin: auto 20px;
+        }
+        p {
+            color: variables2.$fouth-color;
+            font-family: variables2.$main-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .popular {
+        background: variables2.$third-color;
+        height: 180px;
+        position: relative;
+        // display: flex;
+        // flex-direction: end;
+        .popularChild {
+            position: absolute;
+            bottom: 10px;
+            right: 70px;
+        
+        img {
+            width: 160px;
+            height: 37px;
+            margin-bottom: 15px;
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        width: 100%;
+        overflow-x:hidden;
+    }
+    header .headerOne, .headerTwo {
+        width: 100%;
+    }
+    header .headerOne p {
+        flex-direction: row;
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 20%;
+    }
+    header .headerOne span {
+        display: none;
+    }
+    header .shop {
+        flex-direction: column;
+    }
+
+    header .shop h1 {
+        font-size: 50px;
+    }
+
+    header .shop .smallBlackLine {
+        display: none;
+    }
+
+    header .shop p {
+        font-size: 14px;
+    }
+
+    header .headerTwo span {
+        display: none;
+      }
+    header .headerTwo p {
+        display: none;
+      }
+      header .headerTwo nav {
+        justify-content: center;
+        align-items: center;
+      }
+    header .headerTwo nav ul {
+        gap: 30px;
+      }
+    header .headerTwo nav ul li, a {
+        font-size: 18px;
+       // margin-left: 30%;
+      }
+    header .headerTwo .searchAndKorb {
+        display: none;
+      // visibility: hidden;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    header .headerTwo nav ul li, a {
+        font-size: 10px;
+       }
+    header .headerOne p {
+        font-size: 10px;
+    }
+}

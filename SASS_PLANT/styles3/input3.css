@@ -1,0 +1,689 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header .headerOne {
+  height: 45px;
+  background: #50806B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .headerOne p {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+header .headerOne .usd {
+  display: flex;
+  gap: 40px;
+}
+header .headerOne .usd span {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+header .headerTwo {
+  height: 60px;
+  display: flex;
+  background: #FFF;
+  justify-content: space-around;
+  align-items: center;
+}
+header .headerTwo span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+header .headerTwo nav ul li {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo nav ul a {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-decoration: none;
+}
+header .headerTwo .searchAndKorb {
+  display: flex;
+  gap: 10px;
+}
+header .headerTwo .searchAndKorb input {
+  border: none;
+  width: 63px;
+}
+header .headerTwo .searchAndKorb input::-moz-placeholder {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo .searchAndKorb input::placeholder {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo .searchAndKorb .searchImg {
+  width: 22px;
+  height: 22px;
+  margin: auto;
+}
+header .headerTwo .searchAndKorb .line {
+  width: 2px;
+  height: 37px;
+  background: #979797;
+  margin: auto 20px;
+}
+header .headerTwo .searchAndKorb .korb {
+  width: 18px;
+  height: 20px;
+  margin: auto;
+}
+header .headerTwo .searchAndKorb .three {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin: auto;
+}
+header .headerPlant {
+  height: 184px;
+  background: #E8EDDE;
+  padding: 48px 100px;
+  display: flex;
+  align-items: center;
+}
+header .headerPlant h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 1.6px;
+}
+header .headerPlant .smallBlackLine {
+  width: 2px;
+  height: 58px;
+  background: #000;
+  margin: auto 20px;
+}
+header .headerPlant p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .backTo {
+  background: #FFF;
+  height: 100px;
+  padding: 20px 80px;
+}
+header .backTo .backToSearch {
+  display: flex;
+  align-items: center;
+}
+header .backTo .backToSearch img {
+  width: 22px;
+  height: 12px;
+}
+header .backTo .backToSearch a {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  header .headerOne, .headerTwo {
+    width: 100%;
+  }
+  header .headerOne p {
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 20%;
+  }
+  header .headerOne span {
+    display: none;
+  }
+  header .headerPlant {
+    flex-direction: column;
+  }
+  header .headerPlant h1 {
+    font-size: 50px;
+  }
+  header .headerPlant .smallBlackLine {
+    display: none;
+  }
+  header .headerPlant p {
+    font-size: 13px;
+  }
+  header .headerTwo span {
+    display: none;
+  }
+  header .headerTwo p {
+    display: none;
+  }
+  header .headerTwo nav {
+    justify-content: center;
+    align-items: center;
+  }
+  header .headerTwo nav ul {
+    gap: 30px;
+  }
+  header .headerTwo nav ul a, li {
+    font-size: 18px;
+  }
+  header .headerTwo .searchAndKorb {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .headerTwo nav ul li, a {
+    font-size: 10px;
+  }
+  header .headerOne p {
+    font-size: 10px;
+  }
+}
+.love section {
+  padding: 100px 80px;
+}
+.love section h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.love section h1 span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.love section .blackLine {
+  width: 99%;
+  height: 1px;
+  background-color: #000;
+  margin: 30px 0;
+}
+.love section .loveCards {
+  margin-top: 40px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: 25px;
+}
+.love section .loveCards .card {
+  background: #FFF;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+.love section .loveCards .card img {
+  border-radius: 8px;
+}
+.love section .loveCards .card p {
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.love section .loveCards .card span {
+  color: #343434;
+  font-size: 20px;
+}
+.love section .loveCards .card span .red {
+  color: #D11F1F;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.love section .loveCards .card button {
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  background: #50806B;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 12px 100px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 870px) {
+  .love {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .love section {
+    padding: 100px 60px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .love {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .love section {
+    padding: 100px 40px;
+  }
+}
+footer {
+  background: #E8EDDE;
+  padding: 80px 30px;
+}
+footer .faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.greenLine {
+  background: #50806B;
+  text-align: center;
+  padding: 10px;
+  color: #E8EDDE;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  footer .faqs {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto-fill;
+  }
+  .greenLine {
+    font-size: 10px;
+  }
+}
+.marble section {
+  padding: 100px 80px;
+}
+.marble section .plantsAndTexts {
+  display: flex;
+}
+.marble section .plantsAndTexts .greenPlants {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 270px);
+}
+.marble section .plantsAndTexts .texts {
+  padding: 2px 90px;
+}
+.marble section .plantsAndTexts .texts h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+}
+.marble section .plantsAndTexts .texts span {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  margin: 20px 1px;
+}
+.marble section .plantsAndTexts .texts p {
+  color: #0D0D0D;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin: 20px 1px;
+}
+.marble section .plantsAndTexts .texts .grau {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  margin-top: 40px;
+}
+.marble section .plantsAndTexts .imgSize {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.marble section .plantsAndTexts .imgSize .blackQuadrat {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 13px;
+  color: #0D0D0D;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+}
+.marble section .plantsAndTexts .imgSize .grauQuadrat {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(177, 176, 176);
+  color: rgb(177, 176, 176);
+  text-align: center;
+  padding: 13px;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  background: url(../media3/diagonalLine.svg);
+  background-size: 100%;
+}
+.marble section .plantsAndTexts .btnQuantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.marble section .plantsAndTexts .btnQuantity button {
+  padding: 1px 100px;
+  margin-top: 70px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background: #50806B;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  color: #FFF;
+}
+.marble section .plantsAndTexts .btnQuantity .quantity div {
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  width: 100px;
+  height: 48px;
+  padding: 10px;
+}
+.marble section .plantsAndTexts p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1100px) {
+  .marble section {
+    padding: 100px 40px;
+  }
+  .marble section .plantsAndTexts {
+    flex-direction: column;
+  }
+  .marble section .plantsAndTexts .greenPlants {
+    grid-template-columns: repeat(2, 270px);
+    justify-content: center;
+  }
+  .marble section .plantsAndTexts .texts {
+    margin-left: 150px;
+    max-width: 70%;
+    padding: 2px 30px;
+  }
+  .marble section .plantsAndTexts .texts .btnQuantity {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .marble section {
+    padding: 100px 40px;
+  }
+  .marble section .plantsAndTexts {
+    flex-direction: column;
+  }
+  .marble section .plantsAndTexts .greenPlants {
+    grid-template-columns: repeat(2, 270px);
+    justify-content: center;
+  }
+  .marble section .plantsAndTexts .texts {
+    margin-left: 50px;
+    max-width: 90%;
+    padding: 2px 30px;
+  }
+  .marble section .plantsAndTexts .texts .btnQuantity {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .marble section {
+    padding: 100px 40px;
+  }
+  .marble section .plantsAndTexts {
+    flex-direction: column;
+  }
+  .marble section .plantsAndTexts .greenPlants {
+    grid-template-columns: repeat(1, 270px);
+  }
+  .marble section .plantsAndTexts .texts {
+    padding: 2px 10px;
+  }
+  .marble section .plantsAndTexts .texts .btnQuantity {
+    flex-direction: column;
+  }
+}
+.watering {
+  margin-bottom: 80px;
+}
+.watering section {
+  background: #E8EDDE;
+}
+.watering section .twoDivs {
+  display: flex;
+}
+.watering section .twoDivs .plantCare {
+  margin: 20px;
+  margin-left: 100px;
+  max-width: 30%;
+  padding: 25px;
+  border-right: 1px solid #50806B;
+  background: #E8EDDE;
+}
+.watering section .twoDivs .plantCare h4 {
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.55px;
+}
+.watering section .twoDivs .plantCare h5 {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+}
+.watering section .twoDivs .plantCare p {
+  margin-left: 40px;
+  margin-bottom: 10px;
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.352px;
+}
+.watering section .twoDivs .plantWater {
+  max-width: 70%;
+  padding: 25px;
+}
+.watering section .twoDivs .plantWater h1 {
+  color: #343434;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.watering section .twoDivs .plantWater p {
+  color: #0D0D0D;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 400px) {
+  .watering section .twoDivs {
+    flex-direction: column;
+  }
+  .watering section .twoDivs .plantCare {
+    margin-left: 20px;
+    border-right: none;
+    max-width: 90%;
+  }
+  .watering section .twoDivs .plantWater {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .watering section .twoDivs .plantCare {
+    margin-left: 5px;
+    max-width: 90%;
+  }
+  .watering section .twoDivs .plantWater {
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=input3.css.map */

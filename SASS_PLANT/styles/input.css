@@ -1,0 +1,867 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header .headerOne {
+  height: 45px;
+  background: #50806B;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .headerOne p {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+header .headerOne span {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+header .headerTwo {
+  height: 60px;
+  display: flex;
+  background: #FFF;
+  justify-content: space-around;
+  align-items: center;
+}
+header .headerTwo span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+header .headerTwo nav ul li {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo nav ul a {
+  text-decoration: none;
+  color: #000;
+}
+header .headerTwo .searchAndKorb {
+  display: flex;
+  gap: 10px;
+}
+header .headerTwo .searchAndKorb input {
+  border: none;
+  width: 63px;
+}
+header .headerTwo .searchAndKorb input::-moz-placeholder {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo .searchAndKorb input::placeholder {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+header .headerTwo .searchAndKorb .searchImg {
+  width: 22px;
+  height: 22px;
+  margin: auto;
+}
+header .headerTwo .searchAndKorb .line {
+  width: 2px;
+  height: 37px;
+  background: #979797;
+  margin: auto 20px;
+}
+header .headerTwo .searchAndKorb .korb {
+  width: 18px;
+  height: 20px;
+  margin: auto;
+}
+header .headerTwo .searchAndKorb .three {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin: auto;
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  header .headerOne, .headerTwo {
+    width: 100%;
+  }
+  header .headerOne p {
+    flex-direction: row;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 20%;
+  }
+  header .headerOne span {
+    display: none;
+  }
+  header .headerTwo span {
+    display: none;
+  }
+  header .headerTwo p {
+    display: none;
+  }
+  header .headerTwo nav {
+    justify-content: center;
+    align-items: center;
+  }
+  header .headerTwo nav ul {
+    gap: 30px;
+  }
+  header .headerTwo nav ul li, a {
+    font-size: 18px;
+  }
+  header .headerTwo .searchAndKorb {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .headerTwo nav ul li, a {
+    font-size: 10px;
+  }
+  header .headerOne p {
+    font-size: 10px;
+  }
+}
+.passion {
+  width: 100%;
+  height: 700px;
+}
+.passion section {
+  background: #E8EDDE;
+}
+.passion section .imgs-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.passion section .imgs-container .bigImg {
+  height: 700px;
+  background-image: url("../media/bigImg.svg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  position: relative;
+}
+.passion section .divMiddle {
+  max-width: 590px;
+  position: absolute;
+  top: 105px;
+  left: 30%;
+  height: 700px;
+  background: rgba(80, 128, 107, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  justify-content: center;
+  align-items: center;
+  padding: 140px 40px;
+  z-index: 1;
+}
+.passion section .divMiddle h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 2.4px;
+}
+.passion section .divMiddle p {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 60px auto;
+}
+.passion section .divMiddle button {
+  display: flex;
+  padding: 24px 56px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #FFF;
+  border: none;
+  margin: auto;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.greenLine {
+  height: 45px;
+  background: #50806B;
+  z-index: 5;
+}
+
+@media screen and (max-width: 960px) {
+  .passion {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .passion section .divMiddle {
+    padding: 90px 30px;
+    right: 30%;
+  }
+  .passion section .divMiddle h1 {
+    font-size: 30px;
+  }
+  .passion section .divMiddle button {
+    padding: 20px 40px;
+    font-size: 18px;
+  }
+  .passion section .divMiddle p {
+    font-size: 20px;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 498px) {
+  .passion {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .passion section .imgs-container {
+    width: 100%;
+  }
+  .passion section .divMiddle {
+    right: 10%;
+    left: 10%;
+  }
+  .passion section .divMiddle h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  .passion section .divMiddle p {
+    font-size: 15px;
+    margin: 20px auto;
+  }
+  .passion section .divMiddle button {
+    margin-top: 80px;
+    font-size: 15px;
+  }
+}
+.category {
+  background: #FFF;
+}
+.category section {
+  padding: 130px 80px;
+}
+.category section h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.category section h1 span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.category section .blackLine {
+  width: 99%;
+  height: 1px;
+  background-color: #000;
+  margin: 30px 0;
+}
+.category section .flowers {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.category section .flowers div img {
+  height: 190px;
+  align-self: stretch;
+  border-radius: 20px;
+  box-shadow: 0px 8px 13px 0px rgba(80, 107, 82, 0.16);
+}
+.category section .flowers div p {
+  color: #343434;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+@media screen and (max-width: 1050px) {
+  .category {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .category section {
+    padding: 130px 40px;
+  }
+  .category section h1 {
+    font-size: 40px;
+  }
+  .category section h1 span {
+    font-size: 40px;
+  }
+  .category .flowers div {
+    grid-template-columns: 300px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .category {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .category section {
+    padding: 130px 40px;
+  }
+  .category section h1 {
+    font-size: 40px;
+  }
+  .category section h1 span {
+    font-size: 40px;
+  }
+}
+.selling section {
+  background: #FFF;
+  padding: 100px 80px;
+}
+.selling section .divH1 {
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3px;
+}
+.selling section .divH1 h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.selling section .divH1 h1 span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.selling section .divH1 p {
+  color: #000;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-transform: uppercase;
+}
+.selling section .sellingCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 20px;
+}
+.selling section .sellingCards button {
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  background: #50806B;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 15px 120px;
+  margin: 16px auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .selling {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .selling section {
+    padding: 100px 40px;
+  }
+  .selling section .divH1 p {
+    color: #FFF;
+  }
+  .selling section .sellingCards {
+    padding: 40px 1px;
+    gap: 15px;
+  }
+  .selling section .sellingCards div {
+    margin: 1px;
+  }
+  .selling section .sellingCards div img {
+    width: 250px;
+  }
+  .selling section .sellingCards button {
+    width: 250px;
+    height: 60px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .selling {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .selling section h1 {
+    font-size: 40px;
+  }
+  .selling section h1 span {
+    font-size: 40px;
+  }
+  .selling section .sellingCards {
+    justify-content: center;
+  }
+  .selling section .sellingCards div img {
+    width: 270px;
+  }
+  .selling section .sellingCards button {
+    width: 270px;
+    height: 60px;
+    padding: 15px;
+  }
+}
+.plants section {
+  background: #E8EDDE;
+  padding: 100px 80px;
+}
+.plants section .divH1 {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3px;
+}
+.plants section .divH1 h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.plants section .divH1 h1 span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.plants section .divH1 p {
+  color: #000;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.7px;
+  text-transform: uppercase;
+}
+.plants section .plantsCards {
+  margin-top: 40px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.plants section .plantsCards .card {
+  background: #FFF;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+.plants section .plantsCards .card img {
+  border-radius: 8px;
+}
+.plants section .plantsCards .card p {
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.plants section .plantsCards .card span {
+  color: #343434;
+}
+.plants section .plantsCards .card button {
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  background: #50806B;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 12px 100px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .plants {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .plants section .divH1 p {
+    color: #E8EDDE;
+  }
+}
+@media screen and (max-width: 399px) {
+  .plants {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .plants section {
+    background: #FFF;
+    padding: 100px 40px;
+  }
+  .plants section .divH1 p {
+    color: #FFF;
+  }
+  .plants section h1 {
+    font-size: 40px;
+  }
+  .plants section h1 span {
+    font-size: 40px;
+  }
+  .plants section .plantsCards .card img, button {
+    width: 200px;
+  }
+}
+.deals section {
+  padding: 100px 80px;
+}
+.deals section h1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.deals section h1 span {
+  color: #50806B;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+.deals section .blackLine {
+  width: 99%;
+  height: 1px;
+  background-color: #000;
+  margin: 30px 0;
+}
+.deals section .dealsCards {
+  margin-top: 40px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: 25px;
+}
+.deals section .dealsCards .deal {
+  background: #FFF;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 16px;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+}
+.deals section .dealsCards .deal img {
+  border-radius: 8px;
+}
+.deals section .dealsCards .deal p {
+  color: #343434;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.deals section .dealsCards .deal span {
+  color: #343434;
+  font-size: 20px;
+}
+.deals section .dealsCards .deal span .red {
+  color: #D11F1F;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.deals section .dealsCards .deal button {
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  background: #50806B;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+  padding: 12px 100px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 370px) {
+  .deals {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .deals section {
+    padding: 100px 40px;
+  }
+  .deals section .dealsCards .deal {
+    width: 250px;
+  }
+  .deals section .dealsCards .deal img {
+    width: 200px;
+  }
+  .deals section h1 {
+    font-size: 40px;
+  }
+  .deals section h1 span {
+    font-size: 40px;
+  }
+}
+.testimonials section {
+  background: #E8EDDE;
+  padding: 100px 10%;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials section h1 {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px;
+  letter-spacing: -2.4px;
+}
+.testimonials section .underH1 {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.6px;
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+}
+.testimonials section .cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.testimonials section .cards .testCard {
+  background: #FFF;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 300px;
+  gap: 10px;
+}
+.testimonials section .cards .testCard p {
+  color: #1D293F;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.8px;
+}
+.testimonials section .cards .testCard span {
+  color: #7C8087;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 370px) {
+  .testimonials {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .testimonials section {
+    background: #FFF;
+  }
+  .testimonials section h1 {
+    font-size: 40px;
+  }
+  .testimonials section .cards .testCard {
+    border: 1px solid #E8EDDE;
+    width: 250px;
+  }
+}
+footer {
+  background: #FFF;
+  padding: 80px 30px;
+}
+footer .faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.greenLine {
+  text-align: center;
+  padding: 10px;
+  color: #E8EDDE;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  footer .faqs {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto-fill;
+  }
+  .greenLine {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=input.css.map */

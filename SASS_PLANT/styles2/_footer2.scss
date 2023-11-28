@@ -1,0 +1,57 @@
+@use 'variables2';
+@use 'global2';
+
+footer {
+    background: variables2.$secondary-bg-color;
+    padding: 80px 30px;
+    .faqs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+    
+}
+
+.greenLine {
+        background: variables2.$main-bg-color;
+        text-align: center;
+        padding: 10px;
+        color: variables2.$secondary-bg-color;
+        font-family: Public Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+@media screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    footer .faqs {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto-fill;
+    }
+    .greenLine {
+        font-size: 10px;
+        
+    }
+}

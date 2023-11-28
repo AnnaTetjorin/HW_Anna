@@ -1,0 +1,215 @@
+@use 'variables3';
+@use 'global3';
+
+.marble {
+    section {
+        padding: 100px 80px;
+        .plantsAndTexts {
+            display: flex;
+            .greenPlants {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: repeat(2, 270px);
+                
+            }
+            .texts {
+                padding: 2px 90px;
+                h1 {
+                    color: variables3.$fouth-color;
+                    font-family: variables3.$main-font;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 44px; 
+                    letter-spacing: -1.5px;
+                }
+                span {
+                    color: variables3.$fouth-color;
+                    font-family: variables3.$secondary-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; 
+                    letter-spacing: -0.3px;
+                    margin: 20px 1px;
+                }
+                p {
+                    color: #0D0D0D;
+                    font-family: variables3.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    letter-spacing: -0.4px;
+                    margin: 20px 1px;
+                }
+                .grau {
+                    color: variables3.$fouth-color;
+                    font-family: variables3.$secondary-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; 
+                    letter-spacing: -0.3px;
+                    margin-top: 40px;
+
+                }
+
+            }
+            .imgSize {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+                
+                
+                .blackQuadrat {
+                    border: 1px solid black;
+                    width: 50px;
+                    height: 50px;
+                    text-align: center;
+                    padding: 13px;
+                    color: #0D0D0D;
+                    font-family: Public Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px; 
+                    letter-spacing: -0.4px;
+                }
+                .grauQuadrat {
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid rgb(177, 176, 176);
+                    color: rgb(177, 176, 176);
+                    text-align: center;
+                    padding: 13px;
+                    font-family: Public Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px; 
+                    letter-spacing: -0.4px;
+                    background: url(../media3/diagonalLine.svg);
+                    background-size: 100%;
+                   
+                }
+            }
+            .btnQuantity {
+               
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                button {
+                    padding: 1px 100px;
+                    margin-top: 70px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 20px;
+                    background: #50806B;
+                    text-align: center;
+                    font-family: variables3.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px; 
+                    letter-spacing: -0.4px;
+                    color: variables3.$third-color;
+
+                }
+                .quantity {
+                    div {
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        text-align: center;
+                        width: 100px;
+                        height: 48px;
+                        padding: 10px;
+                    }
+                }
+            }
+            p {
+                color: variables3.$fouth-color;
+                font-family: variables3.$secondary-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+                letter-spacing: -0.4px;
+                opacity: 0.5;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .marble section {
+            padding: 100px 40px; 
+    }
+                
+    .marble section .plantsAndTexts {
+        flex-direction: column;
+    }
+
+    .marble section .plantsAndTexts .greenPlants {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
+}
+
+.marble section .plantsAndTexts .texts {
+    margin-left: 150px;
+    max-width: 70%;
+    padding: 2px 30px;
+}
+
+.marble section .plantsAndTexts .texts .btnQuantity {
+        flex-direction: column;       
+}}
+
+
+@media screen and (max-width: 700px) {
+    .marble section {
+            padding: 100px 40px; 
+    }
+                
+    .marble section .plantsAndTexts {
+        flex-direction: column;
+    }
+
+    .marble section .plantsAndTexts .greenPlants {
+            grid-template-columns: repeat(2, 270px);
+            justify-content: center;
+}
+
+.marble section .plantsAndTexts .texts {
+    margin-left: 50px;
+    max-width: 90%;
+    padding: 2px 30px;
+}
+
+.marble section .plantsAndTexts .texts .btnQuantity {
+        flex-direction: column;       
+}}
+
+
+
+@media screen and (max-width: 550px) {
+    .marble section {
+            padding: 100px 40px; 
+    }
+
+    .marble section .plantsAndTexts {
+        flex-direction: column;
+    }
+
+    .marble section .plantsAndTexts .greenPlants {
+            grid-template-columns: repeat(1, 270px);
+}
+
+.marble section .plantsAndTexts .texts {
+    padding: 2px 10px;
+}
+
+.marble section .plantsAndTexts .texts .btnQuantity {
+        flex-direction: column;       
+}}

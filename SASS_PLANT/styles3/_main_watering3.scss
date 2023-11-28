@@ -1,0 +1,101 @@
+@use 'variables3';
+@use 'global3';
+
+.watering { 
+    margin-bottom: 80px;
+    section {
+        background: variables3.$secondary-bg-color;
+        .twoDivs {
+            display: flex;
+            .plantCare {
+                margin: 20px;
+                margin-left: 100px;
+                max-width: 30%;
+                padding: 25px;
+                border-right: 1px solid #50806B;
+                background: variables3.$secondary-bg-color;
+                h4 {
+                    color: variables3.$fith-color;
+                    font-family: variables3.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: 0.55px;
+                }
+                h5 {
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    color: variables3.$fith-color;
+                    font-family: variables3.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; 
+                    letter-spacing: 0.352px;
+                }
+                p {
+                    margin-left: 40px;
+                    margin-bottom: 10px;
+                    color: variables3.$fith-color;
+                    font-family: variables3.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: 0.352px;
+                }
+            } 
+            .plantWater {
+                max-width: 70%;
+                padding: 25px;
+                h1 {
+                    color: variables3.$fith-color;
+                    font-family: variables3.$main-font;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-bottom: 25px;
+                }
+                p {
+                    color: #0D0D0D;
+                    font-family: variables3.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    letter-spacing: -0.4px;
+                    margin-bottom: 25px;
+                }
+
+            }
+        }}}
+
+@media screen and (max-width: 400px) {
+    .watering section .twoDivs {
+        flex-direction: column;
+    }
+
+    .watering section .twoDivs .plantCare {
+        margin-left: 20px;
+        border-right: none;
+        max-width: 90%;
+    }
+
+    .watering section .twoDivs .plantWater {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .watering section .twoDivs .plantCare {
+        margin-left: 5px;
+        max-width: 90%;
+    }
+
+    .watering section .twoDivs .plantWater {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,107 @@
+@use 'variables';
+@use 'global';
+
+.plants {
+
+    section {
+    background: variables.$secondary-bg-color;
+    padding: 100px 80px;
+    .divH1 {
+        border-bottom: 1px solid variables.$fouth-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 3px;
+        h1 {
+            @include variables.blackH1;
+            span {
+                @include variables.greenSpan;
+            }
+        }
+        p {
+            @include variables.showP;
+        }
+    }
+    .plantsCards {
+        margin-top: 40px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        .card {
+            background: variables.$third-color;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            align-self: stretch;
+            border-radius: 16px;
+            box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+            img {
+                border-radius: 8px;
+            }
+            p {
+                color: #343434;
+                font-family: variables.$secondary-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            span {
+                color: #343434;
+            }
+            button {
+                @include variables.greenButton;
+                padding: 12px 100px;
+                color: variables.$third-color;
+                text-align: center;
+                font-family: variables.$secondary-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+    }
+}    
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .plants {
+        width: 100%;
+        overflow-x: hidden;
+    } 
+    .plants section .divH1 p {
+        color: variables.$secondary-bg-color;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .plants {
+        width: 100%;
+        overflow-x: hidden;
+    } 
+    
+    .plants section {
+        background: variables.$third-color;
+        padding: 100px 40px;
+    }
+    .plants section .divH1 p {
+        color: variables.$third-color;
+    }
+    .plants section h1 {
+        font-size: 40px;
+    }
+    .plants section h1 span{
+        font-size: 40px;
+    }
+    // .plants section .plantsCards .card {
+    //     width: 200px;
+    // }
+    .plants section .plantsCards .card img, button{
+        width: 200px;
+    }
+    
+}

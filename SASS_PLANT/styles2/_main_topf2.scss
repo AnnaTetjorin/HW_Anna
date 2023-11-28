@@ -1,0 +1,222 @@
+@use 'variables2';
+@use 'global2';
+
+.main { 
+    display: flex;
+    padding: 10px 70px;
+    margin-bottom: 100px;
+    #firstSection {
+        .threeDivs {
+            
+            .allCategories {
+                margin: 20px;
+                padding: 20px;
+              //  width: 248px;
+                border-radius: 10px;
+                border: 1px solid #E3E5E5;
+                background: variables2.$third-color;
+                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+
+                h4 {
+                    color: variables2.$fith-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: 0.55px;
+                }
+                h6 {
+                    margin-left: 15px;
+                    margin-bottom: 10px;
+                    color: rgba(52, 52, 52, 0.60);
+                    font-family: variables2.$secondary-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 143%; 
+                    letter-spacing: 0.252px;
+                }
+                h5 {
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    color: variables2.$fith-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; 
+                    letter-spacing: 0.352px;
+                }
+                p {
+                    margin-left: 40px;
+                    margin-bottom: 10px;
+                    color: variables2.$fith-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 24px */
+                    letter-spacing: 0.352px;
+                }
+                span {
+                    margin-left: 40px;
+                    margin-bottom: 60px;
+                    color: variables2.$fith-color;
+                    text-align: center;
+                    font-family: variables2.$secondary-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.75px;
+                    text-transform: capitalize;
+                }
+
+            }
+            .price {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #E3E5E5;
+                background: variables2.$third-color;
+                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+                h4 {
+                    color: variables2.$fith-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: 0.55px;
+                }
+
+            }
+            .include {
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                background: variables2.$third-color;
+                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+                h4 {
+                    margin-bottom: 10px;
+
+                }
+                .circle {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    img {
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px;
+                    flex-shrink: 0;
+                    border-radius: 99px;
+                    border: 1px solid black;
+                    background: variables2.$third-color;
+                }
+                p {
+                    color: variables2.$fith-color;
+                    font-family: variables2.$secondary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: 0.352px;
+                }
+            }
+
+            }
+        }
+    }    
+    #secondSection {
+
+        .topfsCards {
+            
+            padding: 20px 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            gap: 20px;
+            .card {
+                background: variables2.$third-color;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                gap: 16px;
+                align-self: stretch;
+                border-radius: 16px;
+                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+                img {
+                    border-radius: 8px;
+                }
+                p {
+                    color: #343434;
+                    font-family: variables2.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                span {
+                    color: #343434;
+                }
+                a {
+                    @include variables2.greenButton;
+                    padding: 12px 100px;
+                    color: variables2.$third-color;
+                    text-align: center;
+                    font-family: variables2.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-decoration: none;
+                }
+            }
+        }}}   
+    
+
+    @media screen and (max-width: 1200px) {
+        .main {
+            flex-direction: column;
+             width: 100%;
+             overflow-x: hidden;
+         }
+        .main #secondSection .topfsCards {                
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+
+    @media screen and (max-width: 800px) {
+         .main {
+            flex-direction: column;
+             width: 100%;
+             overflow-x: hidden;
+         } 
+
+         .main #secondSection .topfsCards {                
+                grid-template-columns: repeat(1, 1fr);
+         }
+   
+    
+     @media screen and (max-width: 399px) {
+         .main {
+            padding: 10px 30px;
+             width: 100%;
+             overflow-x: hidden;
+         } 
+        
+    
+   
+         }
+        
+        }
+    

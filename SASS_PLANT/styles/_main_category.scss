@@ -1,0 +1,89 @@
+@use 'variables';
+@use 'global';
+
+.category {
+    background: variables.$third-color;
+    section {
+    padding: 130px 80px;
+    h1 {
+        @include variables.blackH1;
+        span {
+            @include variables.greenSpan;
+        }
+    }
+    .blackLine {
+        @include variables.blackLine;
+    }
+    .flowers {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 50px 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        // gap: 15px;
+        div { 
+           // justify-content: center;
+           // align-items: center;
+            img {
+            height: 190px;
+            align-self: stretch;
+            border-radius: 20px;
+            box-shadow: 0px 8px 13px 0px rgba(80, 107, 82, 0.16);
+            }
+            p {
+                color: #343434;
+                text-align: center;
+                font-family: variables.$secondary-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 3.2px;
+            }
+        }    
+    }
+}
+}
+
+@media screen and (max-width: 1050px) {
+        .category {
+            width: 100%;
+            overflow-x:hidden;
+        }
+        .category section {
+            padding: 130px 40px;
+        }
+    
+        .category section h1 {
+            font-size: 40px;
+        }
+        .category section  h1 span {
+            font-size: 40px;
+        }
+    
+        .category .flowers div {
+            grid-template-columns: 300px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .category {
+            width: 100%;
+            overflow-x:hidden;
+        }
+        .category section {
+            padding: 130px 40px;
+        }
+    
+        .category section h1 {
+            font-size: 40px;
+        }
+        .category section  h1 span {
+            font-size: 40px;
+        }
+    
+        // .category .flowers div {
+        //     grid-template-columns: repeat(3, 300px);
+        // }
+    }

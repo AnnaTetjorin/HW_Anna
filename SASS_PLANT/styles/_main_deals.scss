@@ -1,0 +1,94 @@
+@use 'variables';
+@use 'global';
+
+.deals {
+    section {
+        padding: 100px 80px;
+        h1 {
+            @include variables.blackH1;
+            span {
+                @include variables.greenSpan;
+            }
+        }
+        .blackLine {
+            @include variables.blackLine;
+        }
+        .dealsCards {
+            margin-top: 40px;
+            padding: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+            gap: 25px;
+            .deal {
+                background: variables.$third-color;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                align-self: stretch;
+                border-radius: 16px;
+                box-shadow: 0px 8px 23px 0px rgba(80, 107, 82, 0.13);
+                img {
+                    border-radius: 8px;
+                }
+                p {
+                    color: #343434;
+                    font-family: variables.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                span {
+                    color: #343434;
+                    font-size: 20px;
+                    .red {
+                        color: #D11F1F;
+                        text-align: center;
+                        font-family: variables.$secondary-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        text-decoration-line: line-through;
+                    }
+                }
+                button {
+                    @include variables.greenButton;
+                    padding: 12px 100px;
+                    color: variables.$third-color;
+                    text-align: center;
+                    font-family: variables.$secondary-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .deals {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .deals section {
+        padding: 100px 40px;
+    }
+    .deals section .dealsCards .deal {
+        width: 250px;
+    }
+    .deals section .dealsCards .deal img {
+        width: 200px;
+    }
+    .deals section h1 {
+        font-size: 40px;
+    }
+    .deals section h1 span{
+        font-size: 40px;
+    }
+    
+}

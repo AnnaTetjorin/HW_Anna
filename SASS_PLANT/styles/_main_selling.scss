@@ -1,0 +1,94 @@
+@use 'variables';
+@use 'global';
+
+.selling {
+    section {
+    background: variables.$third-color;
+    padding: 100px 80px;
+    .divH1 {
+        border-bottom: 1px solid variables.$fouth-color;
+       // display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 3px;
+        h1 {
+            @include variables.blackH1;
+            span {
+                @include variables.greenSpan;    
+            }
+        }
+        p {
+            @include variables.showP;
+        }
+    }
+    .sellingCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 50px 20px;
+        button {
+            @include variables.greenButton;
+            padding: 15px 120px;
+            margin: 16px auto;
+        }
+    }
+}
+}    
+
+@media screen and (max-width: 1050px) {
+    .selling {
+        width: 100%;
+        overflow-x:hidden;
+        
+    }
+    .selling section {
+        padding: 100px 40px;
+    }
+    .selling section .divH1 p{
+        color: variables.$third-color;
+    }
+    .selling section .sellingCards {
+       padding: 40px 1px;
+        gap: 15px
+    }
+    .selling section .sellingCards div {
+        margin: 1px;
+    }
+    .selling section .sellingCards div img{
+        width: 250px;
+    }
+    .selling section .sellingCards button {
+        width: 250px;
+        height: 60px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .selling {
+        width: 100%;
+        overflow-x:hidden;
+        
+    }
+    .selling section h1 {
+        font-size: 40px;
+    }
+    .selling section h1 span{
+        font-size: 40px;
+    }
+
+    .selling section .sellingCards {
+        justify-content: center;
+    }
+
+    .selling section .sellingCards div img{
+        width: 270px;
+    }
+    .selling section .sellingCards button {
+        width: 270px;
+        height: 60px;
+        padding: 15px;
+    }
+}

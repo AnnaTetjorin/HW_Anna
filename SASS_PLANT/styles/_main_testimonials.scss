@@ -1,0 +1,87 @@
+@use 'variables';
+@use 'global';
+
+.testimonials {
+    section {
+        background: variables.$secondary-bg-color;
+        padding: 100px 10%;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: variables.$fouth-color;
+            text-align: center;
+            font-family: variables.$main-font;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 62px; 
+            letter-spacing: -2.4px;
+        }
+        .underH1 {
+            color: variables.$fouth-color;
+            text-align: center;
+            font-family: variables.$secondary-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27.6px; 
+            letter-spacing: 0.1px;
+            margin-top: 10px;
+        }
+        .cards {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            .testCard {
+                background: variables.$third-color;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                max-width: 300px;
+                gap: 10px;
+                p {
+                    color: #1D293F;
+                    text-align: center;
+                    font-family: variables.$main-font;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 28.8px;
+                }
+                span {
+                    color: #7C8087;
+                    text-align: center;
+                    font-family: variables.$main-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .testimonials {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .testimonials section {
+        background: variables.$third-color;
+    }
+    .testimonials section h1 {
+        font-size: 40px;
+    }
+    .testimonials section .cards .testCard {
+        border: 1px solid variables.$secondary-bg-color;
+        width: 250px;
+
+    }
+}
